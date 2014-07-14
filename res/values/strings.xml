@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">The New Boston</string>
+    <string name="hello">Hello World,The New Boston!</string>
+    <string name="ref">this is a reference</string>
+
+</resources>
