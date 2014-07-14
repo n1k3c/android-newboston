@@ -20,8 +20,17 @@ public class SimpleBrowser extends Activity implements OnClickListener{
 		setContentView(R.layout.simplebrowser);
 		
 		ourBrow = (WebView) findViewById(R.id.wvBrowser);
+		
+		ourBrow.getSettings().setJavaScriptEnabled(true);
+		ourBrow.getSettings().setLoadWithOverviewMode(true);
+		ourBrow.getSettings().setUseWideViewPort(true);
+		
 		ourBrow.setWebViewClient(new ourView());
-		ourBrow.loadUrl("http://www.wheelabs.com");
+		try{
+			ourBrow.loadUrl("http://www.wheelabs.com");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		
 		Button go = (Button) findViewById(R.id.bGo);
 		Button back = (Button) findViewById(R.id.bBack);
