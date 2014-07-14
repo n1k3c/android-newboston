@@ -1,2 +1,0 @@
-I am Bam and I like ham. This is our first commit
-Second
