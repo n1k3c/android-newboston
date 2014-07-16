@@ -13,6 +13,7 @@ public class SharedPrefs extends Activity implements OnClickListener {
 
 	EditText sharedData;
 	TextView dataResults;
+	
 	public static String filename = "MySharedString";
 	SharedPreferences someData;
 	
@@ -41,12 +42,26 @@ public class SharedPrefs extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.bSave:
 			String stringData = sharedData.getText().toString();
-			
+			// Save data
+			SharedPreferences.Editor editor = someData.edit();
+			editor.putString("sharedString", stringData);
+			editor.commit();
 			break;
 		case R.id.bLoad:
-			
+			someData = getSharedPreferences(filename, 0);
+			String dataReturned = someData.getString("sharedString", "Couldn't Load Data");
+			dataResults.setText(dataReturned);
 			break;
 		}
 	}
 
 }
+
+
+
+
+
+
+
+
+
