@@ -24,7 +24,7 @@ public final class R {
         public static final int splash_background=0x7f020006;
     }
     public static final class id {
-        public static final int aboutUs=0x7f0a0050;
+        public static final int aboutUs=0x7f0a0054;
         public static final int analogClock1=0x7f0a0008;
         public static final int bAdd=0x7f0a0018;
         public static final int bAddTab=0x7f0a004b;
@@ -51,10 +51,12 @@ public final class R {
         public static final int bStartWatch=0x7f0a0046;
         public static final int bStopWatch=0x7f0a0047;
         public static final int bSub=0x7f0a0019;
+        public static final int bWeather=0x7f0a0052;
         public static final int button1=0x7f0a0010;
         public static final int cbSlidable=0x7f0a0036;
         public static final int content=0x7f0a0034;
         public static final int etAction=0x7f0a0005;
+        public static final int etCity=0x7f0a0050;
         public static final int etCommands=0x7f0a004c;
         public static final int etEmails=0x7f0a0001;
         public static final int etIntro=0x7f0a0002;
@@ -66,9 +68,10 @@ public final class R {
         public static final int etSaveAs=0x7f0a000c;
         public static final int etSend=0x7f0a0011;
         public static final int etSharedPrefs=0x7f0a0024;
+        public static final int etState=0x7f0a0051;
         public static final int etThings=0x7f0a0004;
         public static final int etURL=0x7f0a0028;
-        public static final int exit=0x7f0a0052;
+        public static final int exit=0x7f0a0056;
         public static final int handle=0x7f0a0035;
         public static final int handle1=0x7f0a002f;
         public static final int handle2=0x7f0a0030;
@@ -76,7 +79,7 @@ public final class R {
         public static final int handle4=0x7f0a0032;
         public static final int ibTakePic=0x7f0a001b;
         public static final int ivReturnedPic=0x7f0a001a;
-        public static final int preferences=0x7f0a0051;
+        public static final int preferences=0x7f0a0055;
         public static final int rBoth=0x7f0a0021;
         public static final int rCrazy=0x7f0a001f;
         public static final int rSexy=0x7f0a0020;
@@ -105,6 +108,7 @@ public final class R {
         public static final int tvSQLinfo=0x7f0a0043;
         public static final int tvShowResults=0x7f0a0048;
         public static final int tvText=0x7f0a0023;
+        public static final int tvWeather=0x7f0a0053;
         public static final int viewFlipper1=0x7f0a000f;
         public static final int wvBrowser=0x7f0a002e;
     }
@@ -126,6 +130,7 @@ public final class R {
         public static final int sqlview=0x7f03000e;
         public static final int tabs=0x7f03000f;
         public static final int text=0x7f030010;
+        public static final int weather=0x7f030011;
     }
     public static final class menu {
         public static final int cool_menu=0x7f090000;
