@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -158,6 +159,36 @@
             android:name=".WeatherXMLParsing"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".StatusBar"
+            android:label="@string/app_name" >
+        </activity>
+        
+
+        <receiver
+            android:name=".PointlessWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPADTE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_stuff" >
+            </meta-data>
+        </receiver>
+
+        <activity
+            android:name=".WidgetConfig"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" >
+                </action>
+            </intent-filter>
+        </activity>
+        
+        
+        
     </application>
 
 </manifest>
