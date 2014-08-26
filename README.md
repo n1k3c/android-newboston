@@ -1,6 +1,6 @@
 TheNewBoston
 ============
 
-The New Boston mobile app
+The New Boston Android mobile app
 
 https://buckysroom.org/videos.php?cat=6
